@@ -1,0 +1,19 @@
+<!-- <ngb-tabset type="pills" [orientation]="currentOrientation">
+  <div *ngFor="let manuName of navdirectivedata" >
+    <ngb-tab title={{manuName.hname}} class="highlightLink">
+    </ngb-tab>
+  </div>
+</ngb-tabset> -->
+
+<div class="container-fluid">
+  <div class="navbar-header">
+    <a href="#" class="navbar-brand highlightLink">
+      Guitar Center
+    </a>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li *ngFor="let manuName of navdirectivedata"><a class="highlightLink">{{manuName.hname}}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
